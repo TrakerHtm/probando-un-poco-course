@@ -1,0 +1,18 @@
+title: Probando un poco
+description: >-
+  Esto es para manosear un poco esta pagina, asi que tratare de inventar
+  cualesquiera cosas que se me ocurrir. 
+template:
+  repo: probando-un-poco-template
+  name: probando-un-poco
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
